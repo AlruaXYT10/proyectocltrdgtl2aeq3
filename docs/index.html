@@ -243,17 +243,11 @@
         .posts-grid {
          --margin-posts: 40px;
             margin: 0 auto;
-            width: 768px;
+            grid-template-colums: repeat(auto-fill, minmax(300px, 1fr));
             display: grid;
             gap: var(--margin-posts);
             margin-bottom: var(--margin-posts);
         }
-
-        @media (min-width: 768px) {
-  .posts-grid {
-    width: 60%;
-  }
-}
 
         .post-card {
             background-color: var(--light-card);
